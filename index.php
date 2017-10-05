@@ -1,6 +1,6 @@
 <?php
     include 'config.php';
-    $msg = 'О, великий сотрудник it-solution, введи свой длинный url, я и обрежу его тебе!';
+    $msg = 'Введите полный url (ссылку) и мы сформируем короткий адрес';
     
     if(isset($_GET['short']) AND $_GET['short']!= '' ){
         
@@ -57,7 +57,7 @@
                 <h1><?=$msg?></h1>
                 <form action="cut.php" method="POST">
                     <input type="url" name="full" required="required" placeholder="https://example.com" /><br/>
-                    <h4>Вы можете указать ниже Вашей имя ссылки или оставить пустой - тогда будет выбрано случайное имя</h4>
+                    <h4>Вы можете указать ниже красивое окончание для имени Вашей ссылки, или оставить пустой - тогда будет выбрано случайное имя</h4>
                     <input name="short" placeholder="solution" /><br/>
                     <button>Обрезать</button>
                 </form>

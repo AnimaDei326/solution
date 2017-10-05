@@ -2,7 +2,7 @@
 include 'config.php';
 
 function generateCode($length) {
-    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ0123456789";
     $code = "";
     $clen = strlen($chars) - 1;  
     while (strlen($code) < $length) 
